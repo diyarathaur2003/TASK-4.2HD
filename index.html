@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HD TASK</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>TRAFFIC LIGHTS CONTROLL!!</h1>
+    </header>
+    <div class ="lights">
+        <div class="controls">
+            <h2>Control Panel</h2>
+            <button class="led-button red" id="redButton" onclick="LED_RED()" >RED LED</button>
+            <button  class="led-button blue" id="blueButton"  onclick="LED_BLUE()">Blue LED</button>
+            <button class="led-button green" id="greenButton" onclick="LED_GREEN()" >GREEN LED</button>
+            <button class="led-button off" id ="offButton" onclick ="LED_OFF()"> OFF</button>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <div class ="signs">
+        
+        <img src ="light.png" width = 30px height ="30px">
+        <img src ="stop.png" width = 30px height ="30px">
+        <img src ="warning.png" width = 30px height ="30px">
+
+
+        </div>
+        
+    </footer>
+
+<script type="module">
+
+ import { LED_RED, LED_BLUE, LED_GREEN, LED_OFF } from './script.mjs';
+        window.LED_RED = LED_RED;
+        window.LED_BLUE = LED_BLUE;
+        window.LED_GREEN = LED_GREEN;
+        window.LED_OFF = LED_OFF;
+
+</script>
+</body>
+</html>
+
+
